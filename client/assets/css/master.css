@@ -42,11 +42,8 @@ body{
   padding: 0;
   margin: 0;
 }
-.box-wrap{
-  height: 150px;
-}
 .height-full{
-  height: 100%;
+  height: 150px;
   text-align: center;
 }
 .height-half{
@@ -55,11 +52,11 @@ body{
 }
 .height-full a{
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 0.8em;
   font-weight: 700;
 }
 .height-full i{
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .center-thing{
   position: absolute;
@@ -67,6 +64,9 @@ body{
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
+}
+.height-middle{
+  height: 200px;
 }
 
 /* header------------------------- */
@@ -81,6 +81,8 @@ header p{
 }
 .header-bottom{
   padding: 0;
+}
+.education, about{
   position: relative;
 }
 .education a{
@@ -101,11 +103,30 @@ header p{
   width: 65%;
   text-align: right;
   border-right: 9px solid #FF3B3F;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #efefef;
   font-weight: 500;
   padding-right: 10px;
   margin-right: 20px;
+}
+.wrapper{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.wrapper > * {
+  flex: 1 100%;
+}
+.education{
+  order: 2;
+}
+.personality{
+  order: 1;
 }
 
 
@@ -114,21 +135,40 @@ header p{
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+  .height-full{
+    height: 250px;
+  }
+  .height-half{
+    height: 100%;
+  }
+}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  box-wrap{
-    height: 350px;
+  .height-full{
+    height: 300px;
+  }
+  .height-half{
+    height: 50%;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .box-wrap{
+  .height-full{
     height: 400px;
   }
   .box-half{
     height: 200px;
+  }
+  .height-full a{
+    font-size: 1.3em;
+  }
+  .height-full i{
+    font-size: 2em;
+  }
+  .just-quotes p{
+    font-size: 1.5em;
   }
 }
