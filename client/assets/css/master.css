@@ -20,26 +20,14 @@ tan: #c09f80
   padding: 0;
 }
 body{
-  margin: 5px;
+  margin: 15px;
   color: #222;
   font-size: 14px;
   /* background-color: #efefef; */
   font-family: 'Roboto', sans-serif;
 }
-.box-null{
-  padding: 0;
-  margin: 0;
-}
-
-/* header------------------------- */
-header p{
-  margin-bottom: 0;
-}
 .watermelon{
   background-color: #ff3b3f
-}
-.header-bottom{
-  padding: 0;
 }
 .neutral{
   background-color: #efefef;
@@ -47,18 +35,100 @@ header p{
 .skyblue{
   background-color: #CAEBF2;
 }
-
-/* content------------------------ */
 .blackboard{
   background-color: #565656;
 }
+.box-null{
+  padding: 0;
+  margin: 0;
+}
+.box-wrap{
+  height: 150px;
+}
+.height-full{
+  height: 100%;
+  text-align: center;
+}
+.height-half{
+  height: 50%;
+  text-align: center;
+}
+.height-full a{
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.height-full i{
+  font-size: 2em;
+}
+.center-thing{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+/* header------------------------- */
+header p{
+  margin-bottom: 0;
+}
+.header-top{
+  position: relative
+}
+.header-top p{
+  color: #fff;
+}
+.header-bottom{
+  padding: 0;
+  position: relative;
+}
+.education a{
+  color: #727272;
+}
+.personality a, .about a{
+  color: #ff3b3f;
+}
+.skill a{
+  color: #26c4e6;
+}
+.just-quotes{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.just-quotes p{
+  width: 65%;
+  text-align: right;
+  border-right: 9px solid #FF3B3F;
+  font-size: 1.5em;
+  color: #efefef;
+  font-weight: 500;
+  padding-right: 10px;
+  margin-right: 20px;
+}
+
+
+/* content------------------------ */
+
 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { ... }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+  box-wrap{
+    height: 350px;
+  }
+}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {
+  .box-wrap{
+    height: 400px;
+  }
+  .box-half{
+    height: 200px;
+  }
+}
