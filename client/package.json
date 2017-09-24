@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "website with semantic standart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anggraito/profile-web.git"
+  },
+  "keywords": [
+    "front-end",
+    "semantic",
+    "html5",
+    "css3",
+    "javascript-jquery",
+    "development",
+    "bootstrap-website"
+  ],
+  "author": "anggraito",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "bugs": {
+    "url": "https://github.com/anggraito/profile-web/issues"
+  },
+  "homepage": "https://github.com/anggraito/profile-web#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
