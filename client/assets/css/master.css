@@ -50,12 +50,11 @@ body{
   height: 50%;
   text-align: center;
 }
-.height-full a{
+.height-half a{
   text-decoration: none;
   font-size: 0.8em;
-  font-weight: 700;
 }
-.height-full i{
+.height-half i{
   font-size: 1.8em;
 }
 .center-thing{
@@ -66,7 +65,7 @@ body{
   transform: translate(-50%, -50%)
 }
 .height-middle{
-  height: 200px;
+  height: 150px;
 }
 
 /* header------------------------- */
@@ -85,7 +84,9 @@ header p{
 .education, about{
   position: relative;
 }
-.education a{
+.job-experience a,
+.education a,
+.portofolio a{
   color: #727272;
 }
 .personality a, .about a{
@@ -94,20 +95,39 @@ header p{
 .skill a{
   color: #26c4e6;
 }
+.just-quotes small{
+  color: #fff;
+}
+.just-quotes-second small{
+  color: #727272;
+}
 .just-quotes{
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: center;
+}
+.just-quotes-second{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 .just-quotes p{
-  width: 65%;
-  text-align: right;
-  border-right: 9px solid #FF3B3F;
+  width: 70%;
+  text-align: center;
+  border-bottom: 3px solid #FF3B3F;
   font-size: 1em;
   color: #efefef;
   font-weight: 500;
-  padding-right: 10px;
-  margin-right: 20px;
+  margin-bottom: 0;
+}
+.just-quotes-second p{
+  width: 70%;
+  text-align: center;
+  border-top: 3px solid #26c4e6;
+  font-size: 1em;
+  color: #727272;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 .wrapper{
   display: -webkit-box;
@@ -131,7 +151,35 @@ header p{
 
 
 /* content------------------------ */
+.interest{
+  padding: 50px 0;
+}
+.interest h4{
+  color: #CAEBF2;
+  margin-bottom: 35px;
+}
+.interest ul{
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #CAEBF2;
+}
+.interest li{
+  list-style: none;
+}
 
+/* footer------------------------- */
+.copyright{
+  background: url('/assets/images/pattern.jpg') repeat center center;
+  opacity: 0.6;
+  image-rendering: -webkit-optimize-contrast;
+}
+.copyright p{
+  position: absolute;
+  bottom: 0;
+  background-color: #efefef;
+}
 
 
 /* Small devices (tablets, 768px and up) */
@@ -142,6 +190,41 @@ header p{
   .height-half{
     height: 100%;
   }
+  .wrapper{
+    flex-flow: row nowrap;
+  }
+  .education{
+    order: 1;
+  }
+  .personality{
+    order: 2;
+  }
+  .just-quotes{
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .just-quotes p{
+    width: 65%;
+    font-size: 1em;
+    text-align: right;
+    border-bottom: 0;
+    border-right: 9px solid #FF3B3F;
+    padding-right: 10px;
+    margin-right: 20px;
+  }
+  .just-quotes-second{
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .just-quotes-second p{
+    width: 65%;
+    font-size: 1em;
+    text-align: left;
+    border-top: 0;
+    border-left: 9px solid #26c4e6;
+    padding-left: 10px;
+    margin-left: 20px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -149,26 +232,52 @@ header p{
   .height-full{
     height: 300px;
   }
+  .height-middle{
+    height: 150px;
+  }
   .height-half{
     height: 50%;
+  }
+  .skill, .just-quotes,
+  .education, .personality,
+  .portofolio, .just-quotes-second{
+    height: 100%;
+  }
+  .wrapper{
+    flex-flow: row nowrap;
+  }
+  .education{
+    order: 1;
+  }
+  .personality{
+    order: 2;
+  }
+  .just-quotes p, .just-quotes-second p{
+    font-size: 1.2em;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .height-full{
+  .height-full, .height-middle{
     height: 400px;
   }
-  .box-half{
+  .height-middle{
     height: 200px;
   }
-  .height-full a{
+  .height-half a{
     font-size: 1.3em;
   }
-  .height-full i{
+  .height-half i{
     font-size: 2em;
   }
-  .just-quotes p{
+  .education{
+    order: 1;
+  }
+  .personality{
+    order: 2;
+  }
+  .just-quotes p, .just-quotes-second p{
     font-size: 1.5em;
   }
 }
