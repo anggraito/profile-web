@@ -1,5 +1,58 @@
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Leckerli+One|Open+Sans|Roboto');
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Leckerli One', cursive;*/
+
+/* sky : #CAEBF2
+ABU TUA CARBON : #A9A9A9
+WATERMELON : #FF3B3F
+NEUTRAL : #EFEFEF 
+
+grain: #d7cec7
+blackboard: #565656
+oxblood: #76323f
+tan: #c09f80
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 5px;
+  color: #222;
+  font-size: 14px;
+  /* background-color: #efefef; */
+  font-family: 'Roboto', sans-serif;
+}
+.box-null{
+  padding: 0;
+  margin: 0;
+}
+
+/* header------------------------- */
+header p{
+  margin-bottom: 0;
+}
+.watermelon{
+  background-color: #ff3b3f
+}
+.header-bottom{
+  padding: 0;
+}
+.neutral{
+  background-color: #efefef;
+}
+.skyblue{
+  background-color: #CAEBF2;
+}
+
+/* content------------------------ */
+.blackboard{
+  background-color: #565656;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { ... }
